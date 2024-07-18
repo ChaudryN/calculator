@@ -1,5 +1,5 @@
 {
-  "name": "menacalculator",
+  "name": "mena_calculator",
   "version": "1.5.1",
   "description": "a simple calculator with typescript,node.js and inquirer",
   "main": "index.js",
