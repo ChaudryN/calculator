@@ -1,6 +1,6 @@
 {
   "name": "menacalculator",
-  "version": "1.4.1",
+  "version": "1.5.1",
   "description": "a simple calculator with typescript,node.js and inquirer",
   "main": "index.js",
   "type": "module",
