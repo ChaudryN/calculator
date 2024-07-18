@@ -3,27 +3,30 @@
 import inquirer from "inquirer";
 
 const answer = await inquirer.prompt([
-  { message: "enter first no", type: "number", name: "firstNumber" },
-  { message: "enter second no", type: "number", name: "secondName" },
+  { message: "Enter first no :", type: "number", name: "firstNumber" },
+  { message: "Enter second no :", type: "number", name: "secondNumber" },
   {
-    message: "select one of the operators to perform action",
+    message: "Select one of the operators to perform action :",
     type: "list",
     name: "operator",
-    choices: ['add', 'sub', 'mul', 'divi']
+    choices: ['addition', 'subtraction', 'multiplication', 'division', 'modulus']
   }
 ]);
 
-if(answer.operator === 'add'){
-  console.log('your value is ', answer.firstNumber + answer.secondNumber);
+if(answer.operator === 'addition'){
+  console.log('your answer is :', answer.firstNumber + answer.secondNumber);
 }
-else if (answer.operator === 'sub') {
-  console.log('your value is', answer.firstNumber - answer.secondNumber);
+else if (answer.operator === 'subtraction') {
+  console.log('your answer is :', answer.firstNumber - answer.secondNumber);
 }
-else if (answer.operator === 'mul') {
-  console.log('your value is', answer.firstNumber * answer.secondNumber);
+else if (answer.operator === 'multiplication') {
+  console.log('your answer is :', answer.firstNumber * answer.secondNumber);
 }
-else if (answer.operator === 'divi') {
-  console.log('your value is', answer.firstNumber / answer.secondNumber);
+else if (answer.operator === 'division') {
+  console.log('your answer is :', answer.firstNumber / answer.secondNumber);
+}
+else if (answer.operator === 'modulus') {
+  console.log('your answer is :', answer.firstNumber % answer.secondNumber);
 }
 else{
   console.log('Enter valid value');
